@@ -1,0 +1,75 @@
+{
+  "event_253": {
+    "image_id": "image_01", "amount": 4365000, "currency": "IDR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "Pay slip Aug-2019: Net Pay IDR 4,365,000; Total Earnings (gross) IDR 4,780,800.",
+    "chosen_rule": "prefer_net_over_gross_for_pay"
+  },
+  "event_1442": {
+    "image_id": "image_02", "amount": 100000, "currency": "INR", "source": "vision_interactive", "confidence": 0.8,
+    "ambiguity_note": "Rent receipt 11/08/23: Total Amount to be Received 2,00,000; Amount Received 1,00,000; Balance Due 1,00,000. Row is 'Outstanding rent balance', scheduled.",
+    "chosen_rule": "prefer_amount_valid_on_settlement_date"
+  },
+  "event_1545": {
+    "image_id": "image_03", "amount": 41272, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_total"
+  },
+  "event_1700": {
+    "image_id": "image_04", "amount": 2854, "currency": "INR", "source": "vision_interactive", "confidence": 0.8,
+    "ambiguity_note": "Item Bill 2,854.00; delivery line below is cut off in the screenshot.",
+    "chosen_rule": "printed_total"
+  },
+  "event_1786": {
+    "image_id": "image_05", "amount": 822.05, "currency": "INR", "source": "vision_interactive", "confidence": 0.85,
+    "ambiguity_note": "Amount due till 06-Feb-2026 = 704.05; amount due after 06-Feb-2026 = 822.05. Row settles 2026-02-09.",
+    "chosen_rule": "prefer_amount_valid_on_settlement_date"
+  },
+  "event_3051": {
+    "image_id": "image_06", "amount": 1995, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_grand_total_over_breakdown"
+  },
+  "event_3231": {
+    "image_id": "image_07", "amount": 8528.10, "currency": "INR", "source": "vision_interactive", "confidence": 0.85,
+    "ambiguity_note": "Total : 8528.10; 'Grand Total (RS) : 8528' is the same bill rounded to rupees. Supplied value keeps the paise.",
+    "chosen_rule": "printed_total_before_rupee_rounding"
+  },
+  "event_4535": {
+    "image_id": "image_08", "amount": 15339, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_total"
+  },
+  "event_5170": {
+    "image_id": "image_09", "amount": 723, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_total"
+  },
+  "event_6033": {
+    "image_id": "image_10", "amount": 79679.26, "currency": "INR", "source": "vision_interactive", "confidence": 0.9,
+    "ambiguity_note": "Sub Total 72,045.00 plus CGST/SGST; Total and Balance Due 79,679.26.",
+    "chosen_rule": "printed_grand_total_over_breakdown"
+  },
+  "event_6859": {
+    "image_id": "image_11", "amount": 3650, "currency": "INR", "source": "vision_interactive", "confidence": 0.8,
+    "ambiguity_note": "Total Bill Amount / Amount Payable 3650.00; the detailed breakup subtotals sum to 3150.00.",
+    "chosen_rule": "printed_grand_total_over_breakdown"
+  },
+  "event_7307": {
+    "image_id": "image_12", "amount": 33.50, "currency": "USD", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "Total $33.50; cash paid $40.00, change $6.50. Converted to INR by the engine at the 2025-10-01 USD->INR rate.",
+    "chosen_rule": "printed_total"
+  },
+  "event_7941": {
+    "image_id": "image_13", "amount": 2298, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_total"
+  },
+  "event_9421": {
+    "image_id": "image_14", "amount": 4543, "currency": "INR", "source": "vision_interactive", "confidence": 0.85,
+    "ambiguity_note": "Handwritten; line items 1500+724+796+550+303+670 = 4543 match the written TOTAL.",
+    "chosen_rule": "printed_total"
+  },
+  "event_9806": {
+    "image_id": "image_15", "amount": 9968, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_grand_total_over_breakdown"
+  },
+  "event_10521": {
+    "image_id": "image_16", "amount": 393.22, "currency": "INR", "source": "vision_interactive", "confidence": 0.95,
+    "ambiguity_note": "", "chosen_rule": "printed_total"
+  }
+}

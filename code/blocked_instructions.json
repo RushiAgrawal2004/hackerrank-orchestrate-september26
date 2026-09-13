@@ -1,0 +1,278 @@
+{
+  "source": "messages.csv (deterministic scan)",
+  "count": 34,
+  "items": [
+    {
+      "message_id": "message_05",
+      "user_id": "user_07",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Please use the revised date for anything you normally pay around payday.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_18",
+      "user_id": "user_26",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Hanya faktur yang sudah dikonfirmasi yang dapat dimasukkan dalam pembayaran berikutnya.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_24",
+      "user_id": "user_34",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_30",
+      "user_id": "user_42",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Any income that has ended should be removed from future estimates.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_37",
+      "user_id": "user_50",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Any income that has ended should be removed from future estimates.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_42",
+      "user_id": "user_58",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Pendapatan yang sudah berakhir harus dikeluarkan dari perkiraan berikutnya.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_46",
+      "user_id": "user_62",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_49",
+      "user_id": "user_66",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_50",
+      "user_id": "user_68",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Please use the revised date for anything you normally pay around payday.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_56",
+      "user_id": "user_74",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_67",
+      "user_id": "user_88",
+      "source_type": "financial_service",
+      "category": "payment_demand",
+      "text": "Pay the release charge today to receive the funds immediately.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_67",
+      "user_id": "user_88",
+      "source_type": "financial_service",
+      "category": "payment_demand",
+      "text": "Pay the processing charge now to avoid losing the claim.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_68",
+      "user_id": "user_90",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_72",
+      "user_id": "user_94",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_73",
+      "user_id": "user_95",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Please use the revised date for anything you normally pay around payday.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_76",
+      "user_id": "user_102",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_83",
+      "user_id": "user_110",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_86",
+      "user_id": "user_113",
+      "source_type": "financial_service",
+      "category": "third_party_income_assertion",
+      "text": "Your employer has confirmed a USD 1296 salary credit for 15 September 2026.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_93",
+      "user_id": "user_122",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Hanya faktur yang sudah dikonfirmasi yang dapat dimasukkan dalam pembayaran berikutnya.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_96",
+      "user_id": "user_126",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_101",
+      "user_id": "user_131",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Please use the revised date for anything you normally pay around payday.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_109",
+      "user_id": "user_142",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_119",
+      "user_id": "user_154",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Any income that has ended should be removed from future estimates.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_130",
+      "user_id": "user_166",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_131",
+      "user_id": "user_167",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Please use the revised date for anything you normally pay around payday.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_141",
+      "user_id": "user_178",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_142",
+      "user_id": "user_179",
+      "source_type": "financial_service",
+      "category": "payment_demand",
+      "text": "Bayar biaya pencairan hari ini agar dana segera diterima.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_142",
+      "user_id": "user_179",
+      "source_type": "financial_service",
+      "category": "payment_demand",
+      "text": "Bayar biaya pemrosesan sekarang agar klaim tidak hangus.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_154",
+      "user_id": "user_194",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Please use the revised date for anything you normally pay around payday.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_165",
+      "user_id": "user_212",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Gunakan tanggal terbaru ini untuk pembayaran yang biasanya dilakukan saat gajian.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_173",
+      "user_id": "user_222",
+      "source_type": "service_provider",
+      "category": "estimate_directive",
+      "text": "Only invoices marked as confirmed should be included in the upcoming payout.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_180",
+      "user_id": "user_230",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Any income that has ended should be removed from future estimates.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_187",
+      "user_id": "user_238",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Any income that has ended should be removed from future estimates.",
+      "action": "ignored (not executed)"
+    },
+    {
+      "message_id": "message_203",
+      "user_id": "user_262",
+      "source_type": "employer",
+      "category": "estimate_directive",
+      "text": "Pendapatan yang sudah berakhir harus dikeluarkan dari perkiraan berikutnya.",
+      "action": "ignored (not executed)"
+    }
+  ]
+}

@@ -191,3 +191,38 @@ Before submitting, confirm:
 - Every `amount_safe_to_pay` satisfies `0 <= amount_safe_to_pay <= requested_amount`.
 - Every installment plan matches a supplied payment option, and every spending change targets a flexible recurring expense.
 - Your runnable code, setup instructions, and `evaluation/` folder are included in `code.zip`.
+
+---
+
+## Our Solution
+
+**Design thesis:** the financial engine is fully deterministic and auditable. Model use is confined to reading unstructured input (images, free-text messages), never to making decisions. Results are reproducible and the final pipeline run costs nothing.
+
+**Provenance:** `output.csv` is produced entirely by deterministic Python from the `dataset/` files. The only model-derived input is `code/image_amounts.json`: 16 amounts read from receipt images and cached as data. `code/extract_images.py` is provided as the reproducible batch path.
+
+### Run
+
+```bash
+python3 code/main.py        # writes <repo root>/output.csv, then validates it (exit 1 on FAIL)
+python3 code/validate.py    # re-run the hard validator on output.csv
+python3 code/evaluate.py --config code/best_config.json   # score against dataset/sample_requests.csv
+```
+
+Python 3.10+, standard library only (pandas was used only for exploration). Paths are resolved from the script location, so `output.csv` lands in the repository root from any working directory.
+
+### Pipeline
+
+| file | role |
+|---|---|
+| `code/engine.py` | loads the CSVs, converts currencies, detects recurring series, builds the 90-day ledger, `simulate()`, `max_safe_today()`, `earliest_full_date()`; every ambiguous rule is a flag in `CONFIG` |
+| `code/message_rules.py` | deterministic regex rules over `messages.csv` (English + Indonesian): intent, amount, date, supported/unsupported, ledger effects; instruction-like text logged to `code/blocked_instructions.json` and never acted on |
+| `code/image_amounts.json` | amounts for the 16 blank-amount events, read from their images |
+| `code/planner.py` | exhaustive plan search (full / installments / partial / wait × spending-change subsets), spec tie-breakers as one sort key |
+| `code/explain.py` | template explanations filled from engine values |
+| `code/validate.py` | hard output contract checks |
+| `code/fit_flags.py` | coordinate ascent + grid search of CONFIG flags on the 25 samples, with an overfit guard; writes `code/best_config.json` |
+| `code/DATA_NOTES.md`, `code/DECISIONS.md` | data findings, every decision with evidence and known limitations |
+
+### Image extraction
+
+Batch extraction is implemented and reproducible: `python3 code/extract_images.py` sends each image once to Claude (structured JSON output), caches results in `code/image_amounts.json` and logs token usage to `code/token_log.jsonl` (`--dry-run` lists the jobs without calling the API). No API key was available during this build, so the 16 values were read interactively in the development session and written to the cache with `"source": "vision_interactive"`; the rules used for ambiguous documents are in `code/DECISIONS.md`. Because every event is already cached, the script makes no calls unless the cache is removed.
